@@ -41,6 +41,9 @@ header {
     text-decoration: none;
     color: #545454;
 }
+.head-right a:hover{
+    color: #BB7144;
+}
 .navigation {
     display: flex;
     gap: 2rem;
@@ -51,4 +54,7 @@ header {
     text-decoration: none;
     color: #545454;
     font-size: x-large;
+}
+.navigation a:hover{
+    color: #BB7144;
 }
