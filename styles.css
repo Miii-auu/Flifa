@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    background-color: #F3E9E2;
+    width: 100;
+    height: 180px;
+}
+
+.flifa-logo {
+   margin: 2rem;
+   
+}
+
+.contact-nav {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.header-contact {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-left: 28rem;
+    margin-top: 1rem;
+    font-size: 18px;
+}
+
+.head-right {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.head-right a{
+    text-decoration: none;
+    color: #545454;
+}
+.navigation {
+    display: flex;
+    gap: 2rem;
+    margin-left: 18%;
+    margin-top: 2rem;
+}
+.navigation a{
+    text-decoration: none;
+    color: #545454;
+    font-size: x-large;
+}
