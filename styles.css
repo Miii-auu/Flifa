@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 header {
@@ -13,8 +14,8 @@ header {
 }
 
 .flifa-logo {
-   margin: 2rem;
-   
+    margin: 2rem;
+
 }
 
 .contact-nav {
@@ -37,24 +38,98 @@ header {
     align-items: center;
     gap: 5px;
 }
-.head-right a{
+
+.head-right a {
     text-decoration: none;
     color: #545454;
+
 }
-.head-right a:hover{
+
+.head-right a:hover {
     color: #BB7144;
 }
+
 .navigation {
     display: flex;
     gap: 2rem;
     margin-left: 18%;
     margin-top: 2rem;
 }
-.navigation a{
+
+.navigation a {
     text-decoration: none;
     color: #545454;
     font-size: x-large;
 }
-.navigation a:hover{
+
+.navigation a:hover {
     color: #BB7144;
+}
+
+.first-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #F3E9E2;
+
+}
+
+.company-info {
+    width: 45%;
+    padding-left: 80px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #545454;
+}
+
+#erfahrung {
+
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 60px;
+    margin-right: 40px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    margin-left: 60px;
+    margin-right: 40px;
+}
+
+#familienunternehmen {
+    font-size: 18px;
+    margin-top: 0;
+    margin-left: 60px;
+    margin-right: 40px;
+}
+
+button {
+    background-color: #9C6744;
+    height: 60px;
+    width: 250px;
+    border: none;
+    border-radius: 50px;
+    margin-top: 35px;
+    margin-left: 60px;
+    margin-right: 40px;
+}
+
+button a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.intro-image {
+    width: 55%;
+}
+
+.intro-image img {
+    width: 100%;
+    height: auto;
 }
