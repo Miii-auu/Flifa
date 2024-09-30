@@ -1,4 +1,5 @@
 body {
+    background-color: #F3E9E2;
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
@@ -30,7 +31,7 @@ header {
     gap: 80px;
     margin-left: 28rem;
     margin-top: 1rem;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .head-right {
@@ -59,7 +60,7 @@ header {
 .navigation a {
     text-decoration: none;
     color: #545454;
-    font-size: x-large;
+    font-size: 22px;
 }
 
 .navigation a:hover {
@@ -108,7 +109,7 @@ h1 {
     margin-right: 40px;
 }
 
-button {
+.company-info button {
     background-color: #9C6744;
     height: 60px;
     width: 250px;
@@ -119,7 +120,7 @@ button {
     margin-right: 40px;
 }
 
-button a {
+.company-info button a {
     text-decoration: none;
     color: #FFFFFF;
     font-size: 18px;
@@ -133,33 +134,190 @@ button a {
     width: 100%;
     height: auto;
 }
-.tilespicture-1, .tilespicture-2 {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
 
-.img-container1 {
-    width: 100%;      
-    /* height: 300px;      */
-    overflow: hidden;  
-    display: flex;
-    justify-content: space-around;
-}
+.tilespicture-1 {
 
-.img-container1 img {
-   height: 500px;
-   width: 500px;
-    
-    object-fit: cover; 
-}
-.img-container2{
-    width: 400px;
-    height: 100px;
-    overflow: hidden;
-}
-.img-container2 img{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     width: 100%;
-    height: 100%;
-    object-fit: cover; 
+    gap: 10px;
+}
+
+.tilespicture-1 img:nth-of-type(1) {
+    grid-column: span 3;
+}
+
+.tilespicture-1 img:nth-of-type(2) {
+    grid-column: span 3;
+}
+
+.tilespicture-1 img:nth-of-type(3) {
+    grid-column: span 2;
+}
+
+.tilespicture-1 img:nth-of-type(4) {
+    grid-column: span 2;
+}
+
+.tilespicture-1 img:nth-of-type(5) {
+    grid-column: span 2;
+}
+
+.tilespicture-1 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 300px;
+}
+
+
+.second-section {
+    background-color: #F3E9E2;
+    margin: 40px;
+}
+
+.qualität {
+    display: flex;
+}
+
+.qualität-text {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.qualität-text h2 {
+    font-size: 44px;
+    margin-left: 120px;
+    margin-right: 120px;
+    color: #545454;
+}
+
+.qualität-text p {
+    font-size: 18px;
+    margin-left: 120px;
+    margin-right: 120px;
+    color: #545454;
+}
+
+.qualität-picture {
+    background-image: url(images/Fliese-qualität.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+.info-section {
+    background-image: url(images/Backround-third.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    padding-left: 300px;
+    padding-right: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.info-section div button {
+    font-size: 20px;
+    margin: 2px;
+    padding: 20px;
+}
+
+.info-section h2 {
+    font-size: 32px;
+}
+
+.info-section p {
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.orange-button {
+    background-color: #9C6744;
+    height: 60px;
+    width: 250px;
+    border: none;
+    border-radius: 50px;
+    margin-top: 35px;
+    margin-left: 60px;
+    margin-right: 40px;
+}
+
+.orange-button a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.schmuckfliese {
+    display: flex;
+}
+
+.schmuckfliese-text {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.schmuckfliese-text h2 {
+    font-size: 32px;
+    margin-left: 120px;
+    margin-right: 120px;
+    color: #545454;
+}
+
+.schmuckfliese-text p {
+    font-size: 18px;
+    margin-left: 120px;
+    margin-right: 120px;
+    color: #545454;
+}
+
+.schmuckfliese-picture {
+    background-image: url(images/Schmuckfliese.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+footer {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer button {
+    background-color: #9C6744;
+    height: 60px;
+    width: 250px;
+    border: none;
+    border-radius: 50px;
+    margin-left: 60px;
+    margin-right: 40px;
+}
+
+footer button a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
 }
